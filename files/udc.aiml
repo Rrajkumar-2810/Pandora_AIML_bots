@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I have no answer for that.</template>
+  </category>
+  
+<category>
+    <pattern>Hello *</pattern>
+    <template>Hello Customer!</template>
+</category>
+
+<category>
+    <pattern>Hello bot</pattern>
+    <template>Hello User</template>
+</category>
+
+<category>
+    <pattern>_ bot</pattern>
+    <template>What? I didn't get it</template>
+</category>
+
+<category>
+    <pattern>My name is * *</pattern>
+    <template>Hello <star/>. How are you Mr/Mrs <star index="2"/></template>
+</category>
+
+<category>
+    <pattern>say *</pattern>
+    <template>I was going to say <star/></template>
+</category>
+
+<category>
+    <pattern>_ color *</pattern>
+    <template>The one you like the most..</template>
+</category>
+
+<category>
+    <pattern>_ like * * *</pattern>
+    <template>I also like <star index="2"/> <star index="3"/> .</template>
+</category>
+
+<category>
+    <pattern>My name is *</pattern>
+    <template>Hello <set name="firstname"><star/></set>.</template>
+</category>
+
+<category>
+    <pattern>What is my name</pattern>
+    <template>Your name is <get name="firstname"/></template>
+</category>
+
+</aiml>
